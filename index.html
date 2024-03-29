@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/pixeloid-sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div class="score-ingame">
+      <div class="score">
+        <object
+          type="image/svg+xml"
+          width="40"
+          height="40"
+          data="./images/cherry-svgrepo-com.svg"
+        ></object>
+        <span id="score-ingame">0</span>
+      </div>
+      <div class="score">
+        <object
+          type="image/svg+xml"
+          width="40"
+          height="40"
+          data="./images/trophy-svgrepo-com.svg"
+        ></object>
+        <span id="high-score-ingame">0</span>
+      </div>
+    </div>
+    <div id="container">
+      <input id="button" type="checkbox" />
+      <div class="modal">
+        <div class="cotent">
+          <div class="scoreboard">
+            <div class="score">
+              <object
+                type="image/svg+xml"
+                width="40"
+                height="40"
+                data="./images/cherry-svgrepo-com.svg"
+              ></object>
+              <span id="score">0</span>
+            </div>
+            <div class="score">
+              <object
+                type="image/svg+xml"
+                width="40"
+                height="40"
+                data="./images/trophy-svgrepo-com.svg"
+              ></object>
+              <span id="high-score">0</span>
+            </div>
+          </div>
+          <p class="pulse">Press Space to continue</p>
+          <div class="how-to-play">
+            <h1>How to Play?</h1>
+            <p>
+              Use the WASD keys to move the snake. The goal is to eat the
+              cherry, mushroom, pizza, cactus. But be careful some foods have
+              special effects! Avoid colliding with the walls or the snake
+              itself. The game will end if you collide with the walls or the
+              snake itself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./build/index.js"></script>
+  </body>
+</html>
